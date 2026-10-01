@@ -1,0 +1,64 @@
+# ============================================================
+# NÚCLEO
+# ============================================================
+streamlit>=1.41
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.4
+scipy>=1.11
+plotly>=5.24
+
+# ============================================================
+# LEITURA DE ARQUIVOS
+# ============================================================
+openpyxl>=3.1        # .xlsx
+xlrd>=2.0            # .xls (opcional, Excel antigo)
+pyarrow>=14          # leitura rápida de parquet/CSV
+
+# ============================================================
+# FONTE DE DADOS UCI
+# ============================================================
+ucimlrepo>=0.0.7
+
+# ============================================================
+# BOOSTING EXTERNO
+# ============================================================
+xgboost>=2.0
+lightgbm>=4.0
+catboost>=1.2
+
+# ============================================================
+# AGRUPAMENTO EXTRA
+# ============================================================
+hdbscan>=0.8
+
+# ============================================================
+# MAPA DE KOHONEN (SOM)
+# ============================================================
+minisom>=2.3
+
+# ============================================================
+# SÉRIE TEMPORAL — MODELOS NATIVOS
+# ============================================================
+statsmodels>=0.14    # ARIMA, SARIMAX, ExponentialSmoothing, adfuller, seasonal_decompose
+prophet>=1.1         # Prophet (Facebook/Meta)
+
+# ============================================================
+# SÉRIE TEMPORAL — BIBLIOTECAS ESPECIALIZADAS (OPCIONAIS)
+# ============================================================
+# Descomente se quiser expandir ainda mais os modelos de série temporal:
+# sktime>=0.30       # ARIMA, AutoARIMA, ThetaForecaster, PolynomialTrendForecaster,
+#                    # TimeSeriesForest, KNN-DTW, BOSS, ShapeletTransform, etc.
+# aeon>=1.0          # TimeSeriesForestClassifier, RocketClassifier, InceptionTime, etc.
+# tslearn>=0.6       # TimeSeriesKMeans, KShape, KNN-DTW, etc.
+# skforecast>=0.14   # ForecasterRecursive (wrapper para regressores sklearn)
+# pmdarima>=2.0      # auto_arima
+# neuralprophet>=0.7 # Prophet com redes neurais
+# darts>=0.30        # N-BEATS, TFT, RNN, etc.
+# gluonts>=0.14      # DeepAR, DeepState, etc.
+
+# ============================================================
+# VISUALIZAÇÃO ESTATÍSTICA (OPCIONAL)
+# ============================================================
+# matplotlib>=3.8    # usado por statsmodels em decomposição
+# seaborn>=0.13      # heatmaps adicionais
